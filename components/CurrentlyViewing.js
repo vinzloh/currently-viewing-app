@@ -7,9 +7,11 @@ export default ({ viewers = [], isLoading }) => (
     IP addresses currently viewing this app:
     <div className={cssList.list}>
       {viewers.map(viewer => (
-        <div key={viewer.ip} className={cssList.listItem}>
+        <div key={viewer.sessionToken} className={cssList.listItem}>
+          {console.log("viewer:", viewer)}
           {viewer.ip}
           {viewer.isViewer ? " (you)" : ""}
+          Pax: {viewer.count}
         </div>
       ))}
       {isLoading && (

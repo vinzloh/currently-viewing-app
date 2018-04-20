@@ -23,6 +23,7 @@
   "dependencies": {
     "@zeit/next-css": "^0.1.5",
     "firebase": "^4.12.1",
+    "hat": "0.0.3",
     "ip": "^1.1.5",
     "next": "^5.1.0",
     "normalize.css": "^8.0.0",
